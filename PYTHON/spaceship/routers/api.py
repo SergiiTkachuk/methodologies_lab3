@@ -5,4 +5,9 @@ router = APIRouter()
 
 @router.get('')
 def hello_world() -> dict:
-    return {'msg': 'Hello, World!'}
+    data = {
+        "student": "Serhii Tkachuk",
+        "age": 19
+    }
+
+    return data
